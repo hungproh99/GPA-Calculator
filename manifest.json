@@ -1,0 +1,11 @@
+{
+    "name": "FPTU GPA",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Quick calculate GPA in FAP website for FPTU's student",
+    "content_scripts": [{
+        "matches": ["https://fap.fpt.edu.vn/Grade/StudentTranscript.aspx"],
+        "js": ["jquery-3.2.1.min.js", "content.js"],
+        "run_at": "document_idle"
+    }]
+}
